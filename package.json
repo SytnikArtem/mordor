@@ -1,43 +1,43 @@
 {
-  "name": "webpack-starter",
-  "version": "1.0.0",
-  "description": "Webpack-starter project",
-  "main": " ",
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "webpack-cli serve --mode development --config webpack.config.dev.js",
-    "heroku-prebuild": "yarn install",
-    "build": "webpack --config webpack.config.prod.js --progress",
-    "start": "node index.js",
-    "postinstall": "patch-package"
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@babel/core": "^7.14.3",
-    "autoprefixer": "^8.6.5",
-    "axios": "^0.19.0",
-    "babel-loader": "^7.1.5",
-    "babel-polyfill": "^6.26.0",
-    "copy-webpack-plugin": "^4.5.2",
-    "css-loader": "^1.0.0",
-    "expose-loader": "^0.7.5",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.1",
-    "node-sass": "^4.12.0",
-    "node-static": "^0.7.10",
-    "node-vibrant": "^3.1.3",
-    "optimize-css-assets-webpack-plugin": "^5.0.0",
-    "postcss-loader": "^2.1.6",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "uglifyjs-webpack-plugin": "^2.1.3",
-    "webpack": "^4.16.0",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^3.1.4",
-    "yui-lint": "^0.2.0"
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0"
-  }
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
