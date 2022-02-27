@@ -1,9 +1,10 @@
 var static = require("node-static");
 var file = new static.Server("./dist", { serverInfo: "bs_core" });
+//TODO, remove after checking | test PR
 require("http")
-  .createServer(function(request, response) {
+  .createServer(function (request, response) {
     request
-      .addListener("end", function() {
+      .addListener("end", function () {
         file.serve(request, response);
       })
       .resume();
