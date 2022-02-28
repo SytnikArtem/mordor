@@ -37,8 +37,15 @@
                     <h5>
                         4. <span>Допомагайте</span> українцям тут і зараз:
                         <div class="stop-list-text">
-                            <a href="">Фонд Національного Банку України”</a>
-                            <a href="">Фонд “Повернись живим”</a>
+                            <a href="" target="_blank">Фонд Національного Банку України”</a>
+                            <a href="https://savelife.in.ua/" target="_blank">Фонд “Повернись живим”</a>
+                        </div>
+                        <div class="stop-list-list list">
+                            <p class="list-title">Криптовалютою:</p>
+                            <p class="list-text">Ethereum. Bitcoin and Tether (USDTtrc20):</p>
+                            <p class="list-text">BTC - 357a3So9CbsNfBBgFYACGvxxS6tMaDoa1P</p>
+                            <p class="list-text">ETH - 0x165CD37b4C644C2921454429E7F9358d18A45e14</p>
+                            <p class="list-text">USDT (trc20) - TEFccmfQ38cZS1DTZVhsxKVDckA8Y6VfCy</p>
                         </div>
                     </h5>
                 </li>
@@ -118,6 +125,22 @@ export default {
         }
         &-text {
             margin-top: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .list {
+            margin-top: 26px;
+            &-title {
+                margin-bottom: 14px;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 14px;
+                opacity: 0.8;
+                font-weight: normal;
+                margin-top: 8px;
+            }
         }
     }
 }
