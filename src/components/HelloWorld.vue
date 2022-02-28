@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">Starter project</div>
+  <p>{{ $t("hello") }}</p>
 </template>
 
 <script>
@@ -13,3 +13,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped></style>
+
+<i18n>
+{
+  "en": {
+    "hello": "Hello"
+  },
+  "ua": {
+    "hello": "Привiт"
+  },
+  "ru": {
+    "hello": "Привет"
+  }
+}
+</i18n>
