@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-    <LanguageSwitcher v-if="false" />
-    <HelloWorld />
+    <LanguageSwitcher />
+    <PutinHuilo />
+    <Map />
     <HelpStop />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import LanguageSwitcher from "./components/LanguageSwitcher.vue";
+import PutinHuilo from "./components/PutinHuilo";
 import HelpStop from "./components/HelpStop";
+import Map from "./components/Map";
 
 export default {
   name: "App",
   components: {
     HelpStop,
     LanguageSwitcher,
-    HelloWorld,
+    PutinHuilo,
+    Map
   },
 };
 </script>
@@ -28,6 +31,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
+  color: #000000;
   font-family: 'e-Ukraine-Regular';
   vertical-align: baseline; }
 
