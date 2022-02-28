@@ -1,0 +1,12 @@
+@mixin fontFace($FontName, $FontPathName) {
+  @font-face {
+    font-family: '#{$FontName}';
+    src: url('~/assets/fonts/#{$FontPathName}.woff') format('woff'),
+    url('~/assets/fonts/#{$FontPathName}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@include fontFace('e-Ukraine-Regular', 'e-Ukraine-Regular');
