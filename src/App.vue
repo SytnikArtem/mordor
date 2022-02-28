@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <LanguageSwitcher v-if="false" />
+    <LanguageSwitcher />
+    <PutinHuilo />
+    <Map />
     <HelpStop />
   </div>
 </template>
 
 <script>
 import LanguageSwitcher from "./components/LanguageSwitcher.vue";
+import PutinHuilo from "./components/PutinHuilo";
 import HelpStop from "./components/HelpStop";
+import Map from "./components/Map";
 
 export default {
   name: "App",
   components: {
     HelpStop,
     LanguageSwitcher,
+    PutinHuilo,
+    Map
   },
 };
 </script>
@@ -105,9 +111,9 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "e-Ukraine-Regular";
-  vertical-align: baseline;
-}
+  color: #000000;
+  font-family: 'e-Ukraine-Regular';
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 
