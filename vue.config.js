@@ -1,14 +1,14 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
   transpileDependencies: true,
 
   pluginOptions: {
     i18n: {
-      locale: 'en',
-      fallbackLocale: 'ua',
-      localeDir: 'locales',
+      locale: "en",
+      fallbackLocale: "ua",
+      localeDir: "locales",
       enableInSFC: true,
-      enableBridge: false
-    }
-  }
-})
+      enableBridge: false,
+    },
+  },
+});
